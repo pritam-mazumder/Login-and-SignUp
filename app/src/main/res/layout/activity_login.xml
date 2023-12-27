@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/blue"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/header"
+            android:text="@string/hello_again" />
+
+        <TextView
+            style="@style/discription"
+            android:text="@string/welcome_1" />
+
+
+        <EditText
+            android:id="@+id/lEmail"
+            style="@style/borderededittext"
+            android:layout_marginTop="32dp"
+            android:hint="Username"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/lPassword"
+            style="@style/borderededittext"
+            android:layout_marginTop="10dp"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:id="@+id/forgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/forgot_password"
+            android:textColor="@color/blue"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/login_button"
+            style="@style/submitbox"
+            android:layout_marginTop="30dp"
+            android:text="@string/log_in" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="27dp"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="11dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/line" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/or"
+                android:textColor="@color/darkgray" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                style="@style/iconbox"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/iconbg">
+
+                <ImageView
+                    style="@style/icon"
+                    android:src="@drawable/google" />
+            </RelativeLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <RelativeLayout
+                style="@style/iconbox"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/iconbg">
+
+                <ImageView
+                    style="@style/icon"
+                    android:src="@drawable/fb" />
+            </RelativeLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <RelativeLayout
+                style="@style/iconbox"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/iconbg">
+
+                <ImageView
+                    style="@style/icon"
+                    android:src="@drawable/twitter" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/footertextgroup"
+        android:layout_weight="1">
+
+        <TextView
+            style="@style/footertext"
+            android:text="Don’t have an account?" />
+
+        <TextView
+            android:id="@+id/sign_up_button"
+            style="@style/coloredfootertext"
+            android:text=" Sign-Up Now" />
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+

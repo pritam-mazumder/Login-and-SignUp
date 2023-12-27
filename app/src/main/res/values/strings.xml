@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">LoginandSignUp</string>
+    <string name="looker">LooKer</string>
+    <string name="looking_for_someone">Looking for someone?</string>
+    <string name="hello_again">Hello again</string>
+    <string name="welcome_1">Welcome back, before logging in, make sure you enter the account correctly.</string>
+    <string name="forgot_password">Forgot your Password?</string>
+    <string name="log_in">Log In</string>
+    <string name="or">or</string>
+    <string name="create_new_account">Create new account</string>
+    <string name="welcome_2">Welcome, please enter your detail.</string>
+    <string name="register">Register</string>
+</resources>
